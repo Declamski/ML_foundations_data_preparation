@@ -15,7 +15,7 @@
 - Feature Scaling
 - Training a Logistic Regression Model
 
-Note: This is my percieved ordering at the moment. However, there is clearly a "Task Ordering" task which means that after exploring the data I may change the ordering of my tasks. This reordering would be based on research/studying resources from the class. I just wanted to get started with something so I can start working.
+Note: This is my percieved ordering at the start. However, there is clearly a "Task Ordering" task which means that after exploring the data I may change the ordering of my tasks. This reordering would be based on research/studying resources from the class. I just wanted to get started with something so I can start working.
 
 ### Identifying the Prediction Target
 
@@ -28,3 +28,19 @@ Two variables which could have been percieved as the target variable are:
 
 ### Data Loading and Exploration
 
+**Explicit and Implicit missing values**
+In the kaggle website for the data set, there is a .txt file called "bank.additional-names.txt". There it tells us what values are in each feature, it also explains any implicit missing data such as in the feature **pdays** if the value is **999** it means that the client was not previously contacted meaning it is a missing value.
+
+**Try PCA, suggested by PEAD prof**
+
+
+
+
+**LMM prompts:**
+- **Prompt:** how do i go about detecting which features have "unknown" values in them. Don't do the code, just explain how. **Result:** Suggested iterating through features and searching for "unknown" in them.
+- **Prompt:** so I've done it manually, but I'm only looking for "unknown" instead of general explicit and implicit missing values, is exploring data and looking for specific values representing missing values the best way to go about it or is there another, better, way **Result:** Suggested manual looking at the authors notes of the dataset, this lead me to finding "bank.additional-names.txt" which had a written explanation of each feature.
+- **Prompt:** Can you help me create a pandas DF for an analysis of the missing values **Result:** Gave me the code to visualize the missing values that I assigned to the features that had missing values.
+- **Prompt:** I want to visualize the distributions of some of the features, how do I go about this. When do I know what visualization to use for each data type/feature. **Result:** Gave me a guide of when certain specific distributions are used depending on what the data types are and a decision framework.
+- **Prompt:** For my job distribution I can't read the labels, can you help me make it clearer **Result:** Added a few lines to make it readable.
+- **Prompt:** Can I see how each type of value of the job feature correlated to the output of y? **Result:** Gave me code of sideways bar chart representing subscription rate per job.
+- **Prompt:** so right now I (mostly) just have basic statistical distributions on the data, are there any observations I can make that can give me more insight on how data interacts with each other or the target or anything else? **Result:** Suggested different plots that could give me insight, namely: Box plots of key numerical features vs target,cCorrelation heatmaps, temporal patterns and outlier analysis.
