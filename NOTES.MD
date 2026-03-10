@@ -44,3 +44,4 @@ In the kaggle website for the data set, there is a .txt file called "bank.additi
 - **Prompt:** For my job distribution I can't read the labels, can you help me make it clearer **Result:** Added a few lines to make it readable.
 - **Prompt:** Can I see how each type of value of the job feature correlated to the output of y? **Result:** Gave me code of sideways bar chart representing subscription rate per job.
 - **Prompt:** so right now I (mostly) just have basic statistical distributions on the data, are there any observations I can make that can give me more insight on how data interacts with each other or the target or anything else? **Result:** Suggested different plots that could give me insight, namely: Box plots of key numerical features vs target,cCorrelation heatmaps, temporal patterns and outlier analysis.
+- I had chat re-organize the notebook as it was messy
