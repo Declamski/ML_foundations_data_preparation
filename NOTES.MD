@@ -31,9 +31,19 @@ Two variables which could have been percieved as the target variable are:
 **Explicit and Implicit missing values**
 In the kaggle website for the data set, there is a .txt file called "bank.additional-names.txt". There it tells us what values are in each feature, it also explains any implicit missing data such as in the feature **pdays** if the value is **999** it means that the client was not previously contacted meaning it is a missing value.
 
+**pdays** woul require dealing with the skew of **999** values, especially as they are representing a missing value.
+
 **Try PCA, suggested by PEAD prof**
 
+### Task Ordering
 
+- Data Splitting
+- Managing Missing Values
+- Encoding Categorial Values
+- Feature Selection
+- Feature Scaling
+- Addressing Class Imbalance
+- Training a Logistic Regression Model
 
 
 **LMM prompts:**
